@@ -1,0 +1,72 @@
+/* h1,h2 {
+    color:blue;
+    font-size: 20px;
+}
+
+p{
+    color:aquamarine;
+}
+
+#heading {
+    color: grey;
+    font-size: 30px;
+    background-color: aliceblue;
+}
+
+
+.header {
+    color: grey;
+    font-size: 30px;
+    background-color: aliceblue;
+}
+
+div.text {
+    color: blue
+}
+
+div~p{
+    color: green;
+}
+
+div+div>p{
+    color: black
+}
+
+.fs-awesome-features {
+    color: grey;
+}
+
+#fs-af-text {
+    color: red;
+    font-size: 24px;
+}
+
+.fs-af-details {
+    color: yellow
+} */
+
+div > ul > li {
+    color: green;
+    font-size: 48px;
+}
+
+ul li {
+    color: red;
+}
+
+.m1 .m2 {
+    color: blue;
+}
+
+#p1 #p2 {
+    color: gray;
+}
+
+input[value='Enter the text'] {
+    background-color: blue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
