@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model, Display, Overflow, CSS units</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+       .container{
+            width: 100%;
+            height: 300px;
+            background-color: #808080;
+            border: 1px solid #000000;
+            padding: 20px;
+            margin: 10px;
+       }
+
+       .box {
+            width: 100px;
+            height: 200px;
+            border: 1px dotted #000;
+            background-color: rgb(161, 161, 168);
+            margin: 20px 10px 30px 50px;
+            padding: 40px 30px 50px 20px;
+            overflow: hidden;
+       }
+
+       .content-box {
+            width: 100px;
+            height: 200px;
+            border: 1px dotted #000;
+            background-color: rgb(161, 161, 168);
+            margin: 20px 10px 30px 50px;
+            padding: 40px 30px 50px 20px;
+            box-sizing: content-box;
+       }
+
+       
+        .border-box {
+            width: 100px;
+            height: 200px;
+            border: 1px solid #bd1f1f;
+            background-color: rgb(230, 238, 187);
+            margin: 20px 10px 30px 50px;
+            
+            box-sizing: border-box;
+            border-radius: 5px;
+       }
+
+       /*
+         What is border-box content total height?
+          200 - (2*1) - (40+50) = 108px
+
+         What is border-box content total width?
+
+         100 - (2*1) - (20+30) = 48px
+       
+       */
+
+       .circle-box {
+        width: 50px;
+        height: 50px;
+        border: 1px solid red;
+        box-sizing: border-box;
+        margin: 30px;
+        border-radius: 50%;
+       }
+    
+    
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Content 1</h1>
+    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+</div>
+
+<div class="container">
+    <h1>Content 2</h1>
+    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+</div>
+
+<div class="container">
+    <h1>Content 2</h1>
+    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+</div>
+
+<div class="box">
+  <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+</div>
+
+<div class="content-box">
+  <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+</div>
+
+<div class="border-box">
+  <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+</div>
+
+<div class="circle-box"></div>
+    
+</body>
+</html>
