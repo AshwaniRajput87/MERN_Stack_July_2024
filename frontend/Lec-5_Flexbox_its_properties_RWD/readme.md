@@ -70,8 +70,9 @@ Assignment:
    - <meta> - responsive meta tag: tells to browser the particulat document can open in ant devices and set the initial device width with some value.
    - Step to follow to create responsive layouts:
 
-     1. use resposnive meta tag:
+     1. use responsive meta tag:
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
      2. break-points:
         larger screens(monitor, TV, laptop): > 900px
         tablets: 768px-1024px

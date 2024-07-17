@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designing a Layout using Grid </title>
+    <style>
+
+        *{ 
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-size: 20px;
+            display: grid;
+            grid-template-areas: 
+            'top top top top'
+            'nav . content sidebar'
+            'footer footer footer footer';
+        }
+
+        header, footer, nav, main, aside {
+            background-color: azure;
+            padding: 20px;
+            color: black;
+            /* border: 1px solid aqua; */
+        }
+
+        header {
+            grid-area: top;
+            height: 80px;
+        }
+
+        nav {
+            grid-area: nav;
+            height: 100vh;
+        }
+
+        main{
+            grid-area: content;
+        }
+
+        aside {
+            grid-area: sidebar;
+        }
+
+        footer {
+            grid-area: footer;
+            height: 80px;
+        }
+
+
+
+
+    
+    
+    
+    </style>
+</head>
+<body>
+
+    <header>Header</header>
+    <nav>Nav</nav>
+    <main>Main</main>
+    <aside>Aside</aside>
+    <footer>Footer</footer>
+</body>
+</html>

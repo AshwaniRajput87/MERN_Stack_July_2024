@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout system</title>
+</head>
+<style>
+
+   * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+   }
+
+   body {
+        font-size: 20px;
+        line-height: 1.5;
+        background-color: green;
+        color: black;
+   }
+  
+    .container {
+        width: 100%;
+        margin: 10px auto;
+        padding: 10px;
+        display: grid;
+        /* grid-template-rows: repeat(3, 1fr); */
+         /* grid-template-rows: 25% 200px auto; */
+        grid-template-columns: repeat(3, 2fr);
+        gap: 20px
+    }
+
+    .item {
+
+        background-color: aqua;
+        color: black;
+        padding: 20px;
+        border: 1px solid black;
+
+    }
+</style>
+<body>
+
+   <div class="container">
+        <div class="item item-1">Item 1</div>
+        <div class="item item-2">Item 2</div>
+        <div class="item item-3">Item 3</div>
+        <div class="item item-4">Item 4</div>
+        <div class="item item-5">Item 5
+        <p>First article: Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
+        </div>
+        <div class="item item-6">Item 6</div>
+        <div class="item item-7">Item 7</div>
+        <div class="item item-8">First article: Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</div>
+        <!-- <div class="item item-9">Item 9</div> -->
+   </div>
+    
+</body>
+</html>
