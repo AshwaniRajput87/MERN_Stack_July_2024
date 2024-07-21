@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<!-- Please NOTE that the link to assets (like images) need to be set in global context.
+For example:
+To access an image from assets folder correct way to set src attribute is 
+
+src = 'profile.png'
+
+instead of 
+
+src = './assets/profile.png'
+-->
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --card_width: 250px;
+            --row_increment: 10px;
+            --card_border_radius: 16px;
+            --card_small: 26;
+            --card_medium: 33;
+            --card_large: 45;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            padding-top: 5px;
+            background-color: grey;
+        }
+
+        .pin_container {
+            margin: 0;
+            padding: 0;
+            width: 80vw;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+
+            display: grid;
+            grid-template-columns: repeat(auto-fill, var(--card_width));
+            grid-auto-rows: var(--row_increment);
+            justify-content: center;
+
+            background-color: black;
+        }
+
+        .card {
+            padding: 0;
+            margin: 15px 10px;
+            border-radius: var(--card_border_radius);
+            background-color: yellow;
+        }
+
+        .card_small {
+            grid-row-end: span var(--card_small);
+        }
+
+        .card_medium {
+            grid-row-end: span var(--card_medium);
+        }
+
+        .card_large {
+            grid-row-end: span var(--card_large);
+        }
+    </style>
+</head>
+<body>
+	<div class="pin_container">
+        <div class="card card_small"></div>
+        <div class="card card_medium"></div>
+        <div class="card card_large"></div>
+        <div class="card card_medium"></div>
+        <div class="card card_small"></div>
+        <div class="card card_large"></div>
+        <div class="card card_medium"></div>
+        <div class="card card_small"></div>
+        <div class="card card_medium"></div>
+        <div class="card card_small"></div>
+        <div class="card card_medium"></div>
+        <div class="card card_large"></div>
+        <div class="card card_medium"></div>
+        <div class="card card_small"></div>
+        <div class="card card_medium"></div>
+        <div class="card card_large"></div>
+    </div>
+</body>
+
+</html>
