@@ -1,45 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-
-   <header>
-    <nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal Plans for Everyone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/270a2fb2a1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="shadow-effect"></div>
+      <nav>
         <ul>
-            <li class="items1">Features</li>
-            <li class="items2">Details</li>
-            <li class="items3">Reviews</li>
-            <li class="items4">Plans</li>
-            <li class="items5">SignUp</li>
+          <li class="items1">Features</li>
+          <li class="items2">Details</li>
+          <li class="items3">Reviews</li>
+          <li class="items4">Plans</li>
+          <li class="items5">SignUp</li>
         </ul>
-        <img src="./assets/images/foodiesfeed.com_pizza-ready-for-baking.jpg"/>
-    </nav>
-   </header>
-   <main>
-      <section class="fs-awesome-features">
-        <h2>Awesome Features</h2>
-      </section>
-      <section class="fs-steps-to-follow">
-      <h2>Steps to follow</h2>
-      </section>
-      <section class="fs-reviews">
+      </nav>
+      <div class="banner-header">
+        <div>MEAL PLANS.</div>
+        <div>FOR <span>EVERYONE</span></div>
+        <div class="buttons-container">
+          <button class="primary">Book Now</button>
+          <button class="secondary">Show me more</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="content-section features">
+      <h2>Awesome Features</h2>
+      <div class="divider"></div>
+      <div class="features-container">
+        <div class="feature">
+          <div class="icon"><i class="fa-regular fa-calendar-plus"></i></div>
+          <h3>365 DAYS/YEAR</h3>
+          <p>
+            Never cook again! Our subscription plans include up to 365 days/year
+            coverage. You can also choose to order more flexibly if that's your
+            style.
+          </p>
+        </div>
+        <div class="feature">
+          <div class="icon"><i class="fa-solid fa-truck-fast"></i></div>
+          <h3>30 MINUTES OR FREE</h3>
+          <p>
+            You're only twenty minutes away from your delicious and super
+            healthy meals delivered right to your home. We work with the best
+            chefs in each town to ensure that you're 100% happy.
+          </p>
+        </div>
+        <div class="feature">
+          <div class="icon"><i class="fa-solid fa-carrot"></i></div>
+          <h3>100% ORGANIC</h3>
+          <p>
+            All our vegetables are fresh, organic and local. Animals are raised
+            without added hormones or antibiotics. Good for your health, the
+            environment, and it also tastes better!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section steps">
+      <h2>Steps to Follow</h2>
+      <div class="divider"></div>
+      <div class="steps-container">
+        <img src="./assets/images/Capture.PNG" alt="App Screenshot" />
+        <ol>
+          <li>
+            Choose the subscription plan that best fits your needs and sign up
+            today.
+          </li>
+          <li>
+            Order your delicious meal using our mobile app or website. Or you
+            can even call us!
+          </li>
+          <li>
+            Enjoy your meal after less than 20 minutes. See you the next time!
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="shadow-effect"></div>
+      <div clasS="content-section">
       <h2>Reviews</h2>
-      </section>
-      <section class="fs-pricing">
-        <h2>Start Eating healthy today</h2>
-      </section>
-      <section class="fs-contact-us">
-        <h2>Contact us</h2>
-      </section>
-   </main>
-   <footer></footer>
+      <div class="divider"></div>
+      
+      <div class="reviews-container">
+        <div class="review">
+          <img src="./assets/images/customer.jpg" alt="David Smith" />
+          <p>David Smith</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet iure
+            odio, quod nisi facilis commodi ut ipsum, magnam eius repellat
+            perferendis porro, iste voluptas!
+          </p>
+          <div class="stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span
+            ><span>★</span>
+          </div>
+        </div>
+        <div class="review">
+            <img src="./assets/images/customer.jpg" alt="David Smith" />
+          <p>David Smith</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet iure
+            odio, quod nisi facilis commodi ut ipsum, magnam eius repellat
+            perferendis porro, iste voluptas!
+          </p>
+          <div class="stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span
+            ><span>★</span>
+          </div>
+        </div>
+        <div class="review">
+            <img src="./assets/images/customer.jpg" alt="David Smith" />
+          <p>David Smith</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet iure
+            odio, quod nisi facilis commodi ut ipsum, magnam eius repellat
+            perferendis porro, iste voluptas!
+          </p>
+          <div class="stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span
+            ><span>★</span>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
 
+    <div class="content-section pricing-container">
+        <h1>START EATING HEALTHY TODAY</h1>
+        <div class="divider"></div>
+        <div class="pricing-cards">
+            <div class="pricing-card">
+                <h2>PREMIUM</h2>
+                <p class="price">$399 <span>/month</span></p>
+                <p class="meal-cost">That's only 13.30$ per meal</p>
+                <div class="seperator"></div>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i>1 meal every day</li>
+                    <li><i class="fa-solid fa-check"></i>Order 24/7</li>
+                    <li><i class="fa-solid fa-check"></i>Access to newest creations</li>
+                    <li><i class="fa-solid fa-check"></i>Free delivery</li>
+                </ul>
+                <div class="seperator"></div>
+                <div class="button-container">
+                    <button>I'm hungry</button>
+                </div>
+            </div>
+            <div class="pricing-card focus">
+                <h2>PREMIUM</h2>
+                <p class="price">$399 <span>/month</span></p>
+                <p class="meal-cost">That's only 13.30$ per meal</p>
+                <div class="seperator"></div>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i>1 meal every day</li>
+                    <li><i class="fa-solid fa-check"></i>Order 24/7</li>
+                    <li><i class="fa-solid fa-check"></i>Access to newest creations</li>
+                    <li><i class="fa-solid fa-check"></i>Free delivery</li>
+                </ul>
+                <div class="seperator"></div>
+                <div class="button-container">
+                    <button>I'm hungry</button>
+                </div>
+            </div>
+            <div class="pricing-card">
+                <h2>PREMIUM</h2>
+                <p class="price">$399 <span>/month</span></p>
+                <p class="meal-cost">That's only 13.30$ per meal</p>
+                <div class="seperator"></div>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> 1 meal every day</li>
+                    <li><i class="fa-solid fa-check"></i>Order 24/7</li>
+                    <li><i class="fa-solid fa-check"></i>Access to newest creations</li>
+                    <li><i class="fa-solid fa-check"></i>Free delivery</li>
+                </ul>
+                <div class="seperator"></div>
+                <div class="button-container">
+                    <button>I'm hungry</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-   
-    
-</body>
+    <section class="content-section contact">
+      <h2>Contact Us</h2>
+      <div class="divider"></div>
+      <div class="contact-container">
+        <div class="contact-img">
+            <img src="./assets/images/avacado.gif" width="400" alt="Mascot" />
+          </div>
+        <div class="contact-form">
+          <form action="#">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" />
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+            />
+            <label for="referral">How did you find us</label>
+            <select id="referral" name="referral">
+              <option value="friends">Friends</option>
+              <option value="ads">Ads</option>
+              <option value="internet">Internet</option>
+            </select>
+            <label for="message">Drop us a line</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your Message"
+            ></textarea>
+            <label>
+              <input type="checkbox" name="agree" /> I have read and agree with
+              all the Privacy Policy and Terms Conditions
+            </label>
+            <div class="buttons-container contact-btn">
+              <button class="primary">SEND MESSAGE</button>
+            </div>
+          </form>
+        </div>
+        
+      </div>
+    </section>
+
+    <footer>
+      
+      <div class="footer-links">
+        <div class="app-links">
+          <a href="#">About us</a>
+          <a href="#">iOS App</a>
+          <a href="#">Android App</a>
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i>  </a>
+          <a href="#"><i class="fa-brands fa-square-snapchat"></i></a>
+        </div>
+      </div>
+      <p class="copyrigth">Copyright © 2019 EVERYONE. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
