@@ -24,7 +24,7 @@
 // }
 // cap.sayHi();
 
-var firstName = "Loki";
+let firstName = "Loki"
 let cap = {
     firstName : "Steve",
     sayHi: function(){ // this ia normal method and this context has been set with respect the current object cap itself
