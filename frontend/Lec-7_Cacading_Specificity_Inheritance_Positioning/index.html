@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascading in CSS, specificity, inheritance and Positioning</title>
+    <style>
+
+       /* h1 {
+        color: red !important;
+        font-size: 48px !important;
+        display: flex;
+       } */
+
+        #heading-text {
+            color: pink;
+        }
+
+        .heading{
+            color: red;
+            font-size: 48px;
+            display: flex;
+        }
+
+        #heading-text.heading {
+            color: darkgoldenrod;
+            font-size: 30px;
+        }
+
+        .parent {
+            color: green;
+            font-size: 24px;
+            background-color: aliceblue;
+        }
+
+        /* .child {
+            font-size: 30px;
+        } */
+
+        /* browser writes these lines of code automatically */
+        .child {
+            color: inherit;
+            font-size: inherit;
+        }
+    
+    </style>
+</head>
+<body>
+
+   <!-- <div class="container">
+    <h1 style="color: green; font-size: 20px;"> List of items</h1>
+    <ul>
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        <li class="item">Item 3</li>
+        <li class="item">Item 4</li>
+        <li class="item">Item 5</li>
+        <li class="item">Item 6</li>
+        <li class="item">Item 7</li>
+        <li class="item">Item 8</li>
+        <li class="item">Item 9</li>
+    </ul>
+   </div> -->
+
+   <div class="container">
+    <h1 class="heading" id="heading-text"> List of items</h1>
+    <ul>
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        <li class="item">Item 3</li>
+        <li class="item">Item 4</li>
+        <li class="item">Item 5</li>
+        <li class="item">Item 6</li>
+        <li class="item">Item 7</li>
+        <li class="item">Item 8</li>
+        <li class="item">Item 9</li>
+    </ul>
+   </div>
+
+   <div class="parent">
+        <div class="child"> This is the test will inherit the font-size and color form parent</div>
+        <div class="parent-1">
+            <p>child paragrah</p>
+        </div>
+   </div>
+    
+</body>
+</html>

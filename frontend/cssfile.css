@@ -1,0 +1,29 @@
+ /* *{
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            font-size: 20px;
+            line-height: 1.5;
+            color: dodgerblue;
+            background-color: tomato;
+        }
+
+        .container{
+            width: 1200px;
+            margin: 100px auto;
+            padding: 10px;
+            display : grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 200px
+        }
+
+        .item{
+            background-color: dodgerblue;
+            color: white;
+            font-size: 20px;
+            padding: 20px;
+            border: 1px solid lightblue;
+            
+        } */

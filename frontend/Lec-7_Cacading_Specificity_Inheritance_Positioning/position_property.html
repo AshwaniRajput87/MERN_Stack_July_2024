@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning in CSS</title>
+    <style>
+
+        /* .bookshelf {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+        }
+      
+        .book {
+
+            position: relative;
+            width: 50px;
+            height: 100px;
+            background-color: aliceblue;
+            font-size: 20px;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .book-2{
+
+            position: absolute;
+            left: 25px;
+            top: 10px;
+            background-color: bisque;
+
+        }
+
+        .book-3{
+
+        }
+
+        .book-4{
+            
+        } */
+
+       
+    /* .bookshelf {
+      position: relative; 
+      width: 300px;
+      height: 300px;
+      border: 1px solid #ccc;
+    }
+
+    .book {
+        display: inline-block;
+    }
+
+    .book-1 {
+      background-color: #3498db;
+      width: 50px;
+      height: 100px;
+      color: #fff;
+      text-align: center;
+      line-height: 100px;
+      margin: 5px;
+    }
+
+    .book-2 {
+        background-color: red;
+        width: 50px;
+        height: 100px;
+        color: #fff;
+        text-align: center;
+        line-height: 100px;
+        margin: 5px;
+        position: absolute;
+        top: 0px;
+        left: 15px;
+    }
+
+    .book-3 {
+      background-color: green;
+      width: 50px;
+      height: 100px;
+      color: #fff;
+      text-align: center;
+      line-height: 100px;
+      margin: 5px;
+
+    }
+
+    .book-4 {
+      background-color: magenta;
+      width: 50px;
+      height: 100px;
+      color: #fff;
+      text-align: center;
+      line-height: 100px;
+      margin: 5px;
+
+    } */
+
+    .container {
+        height: 300vh;
+        background-color: aqua;
+    }
+
+    .box{
+
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+        background-color: antiquewhite;
+        border: 1px solid green;
+        margin: 10px;
+    }
+
+    #box_3{
+        position: sticky;
+        top:0;
+        bottom: 0;
+    }
+
+     #box_4{
+        position: sticky;
+        top:100px;
+        bottom: 200px;
+        left: 50px;
+        right: 200px;
+    }
+
+    
+    </style>
+</head>
+<body>
+
+   <!-- <div class="container">
+        <h1>Parent heading</h1>
+        <p>Parent paragrah</p>
+   </div> -->
+
+   <!-- <div class="bookshelf">
+       <div class="book book-1">book 1</div>
+        <div class="book book-2">book 2</div>
+        <div class="book book-3">book 3</div>
+        <div class="book book-4">book 4</div>
+   </div> -->
+
+   <div class="container">
+     <div class="box">box 1</div>
+     <div class="box"> box 2</div>
+     <div class="box" id="box_3"> box 3</div>
+     <div class="box" id="box_4"> box 4</div>
+   </div>
+    
+</body>
+</html>
