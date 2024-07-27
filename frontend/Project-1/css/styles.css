@@ -6,7 +6,10 @@ body {
     background-color: #F4F4F4;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
     margin: 0;
     padding: 0;
 }
@@ -22,7 +25,7 @@ ul {
 }
 
 /* Header */
-body>header{
+body>header {
     height: 640px;
     width: 100%;
     position: relative;
@@ -31,26 +34,42 @@ body>header{
     background-position: center;
     color: #fff;
 }
+
 .banner-header {
     font-size: 3em;
-    position: relative;
-    left: 300px;
-    top: 180px;
     font-weight: 600;
-    width: 500px;
+    margin-left: 300px;
+    margin-top: 180px;
+    color: #fff;
+    text-align: left;
 }
+
 .banner-header span {
     color: #F63854;
 }
-header nav{
+
+header nav {
     position: relative;
 }
-.shadow-effect{
+
+nav a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    border-bottom: 4px solid #F63854;
+    padding-bottom: 5px;
+    color: #fff;
+}
+
+.shadow-effect {
     width: 100%;
     height: 100%;
     background-color: #000000bd;
     position: absolute;
 }
+
 header ul {
     color: #fff;
     display: flex;
@@ -58,13 +77,13 @@ header ul {
     justify-content: flex-end;
     list-style-type: none;
     position: absolute;
-    right: 5px; 
+    right: 5px;
 }
 
 header ul>li {
     color: #fff;
     padding: 10px 10px;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     font-size: 1.5em;
 }
 
@@ -123,35 +142,34 @@ button.secondary {
 }
 
 
-.content-section{
-    color:#808080;
+.content-section {
+    color: #808080;
     padding: 4em 2em;
     text-align: center;
     position: relative !important;
 }
 
-.content-section >h2{
+.content-section>h2 {
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 0.5em !important;
 }
 
 /* Features */
-.features{
+.features {
     background-color: #ffffff;
 }
-.divider{
-    border:1.5px solid #f00;
+
+.divider {
+    border: 1.5px solid #f00;
     width: 100px;
     margin: auto;
     margin-bottom: 1em !important;
 }
-.feature{
-    background: #ffffff;
-}
+
 .feature>.icon {
     font-size: 3em;
-    color:red;
+    color: red;
 }
 
 .features h2 {
@@ -221,6 +239,7 @@ button.secondary {
     list-style-type: none;
 }
 
+
 .steps-container li {
     font-size: 1.2em;
     margin: 1em 0;
@@ -228,11 +247,10 @@ button.secondary {
     counter-increment: step-counter;
 }
 
-.steps-container li:before{
+.steps-container li:before {
     content: counter(step-counter);
     margin-right: 20px;
     font-size: 2em;
-    background-color: rgb(255 255 255);
     color: #f00;
     padding: 3px 14px;
     border-radius: 30px;
@@ -282,6 +300,7 @@ button.secondary {
 .review .stars {
     color: #f94e4e;
 }
+
 .review .stars span {
     padding: 5px;
     font-size: 25px
@@ -290,7 +309,7 @@ button.secondary {
 /* Pricing */
 .pricing-container {
     text-align: center;
-    height: auto;   
+    height: auto;
     margin-bottom: 40px;
 }
 
@@ -305,6 +324,7 @@ button.secondary {
     justify-content: center;
     gap: 100px;
     margin-top: 75px;
+    flex-wrap: wrap;
 }
 
 .pricing-card {
@@ -322,12 +342,12 @@ button.secondary {
 
 }
 
-.pricing-card > h2{
-    color:#0e0b0b;
+.pricing-card>h2 {
+    color: #0e0b0b;
     text-align: center;
 }
 
-.seperator{
+.seperator {
     border: 1px solid #9CA3B2;
     width: 100%;
     margin: auto;
@@ -360,19 +380,19 @@ button.secondary {
     margin-bottom: 20px;
 }
 
-.pricing-card > ul {
+.pricing-card>ul {
     list-style: none;
     padding: 0;
     margin: 0 0 20px 0;
 }
 
-.pricing-card > ul li {
+.pricing-card>ul li {
     color: #555;
     font-size: 1em;
     margin: 10px 0;
 }
 
-.pricing-card > ul > li > i {
+.pricing-card>ul>li>i {
     color: #e74c3c;
     padding-right: 10px;
     font-weight: bold;
@@ -462,11 +482,7 @@ button:hover {
 .contact-container {
     display: flex;
     justify-content: space-around;
-    flex-wrap: nowrap;
-}
-
-.contact-form {
-    width: 50%;
+    flex-wrap: wrap;
 }
 
 .contact-form form {
@@ -480,9 +496,11 @@ button:hover {
     text-align: left;
 }
 
-.contact-form input, .contact-form select, .contact-form textarea {
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
     padding: 10px;
-    border:1px solid #808080;
+    border: 1px solid #808080;
     margin-bottom: 1em;
     border-radius: 0px;
     font-family: sans-serif;
@@ -514,6 +532,7 @@ footer {
     display: flex;
     justify-content: center;
     margin: 1em 0;
+    flex-wrap: wrap;
 }
 
 .footer-links a {
@@ -522,7 +541,7 @@ footer {
     font-size: 24px;
 }
 
-.app-links{
+.app-links {
     flex: 1;
     display: flex;
     flex-direction: row;
@@ -530,7 +549,7 @@ footer {
 }
 
 .social-icons {
-    flex:1;
+    flex: 1;
     display: flex;
     justify-content: center;
     margin: 1em 0;
@@ -538,7 +557,7 @@ footer {
 
 .social-icons a {
     margin: 0 0.5em;
-    padding:10px;
+    padding: 10px;
 }
 
 .social-icons img {
