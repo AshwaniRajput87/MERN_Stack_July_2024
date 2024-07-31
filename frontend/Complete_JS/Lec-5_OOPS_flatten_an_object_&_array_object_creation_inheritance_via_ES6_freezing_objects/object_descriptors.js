@@ -52,5 +52,5 @@
  delete person.name;
 
   for(let key in person) {
-    console.log(key); // can't delete the properties becuse configurale is set as false, to delete it trunnit on as true
+    console.log(key); // can't delete the properties becuse configurale is set as false, to delete it turn it on as true
  }
