@@ -23,23 +23,18 @@
             fn(arg1, arg2,...argN);
 
         - usecase: We use bind when we want to use a method multiple times and we want to make a permanent copy of that method.
-
-
-
-
-
  */
 
 
- let cap = {
-     name: 'Steve',
-     team: 'cap',
-     petersTeam: function(mem1, mem2){
+let cap = {
+    name: 'Steve',
+    team: 'cap',
+    petersTeam: function(mem1, mem2){
 
         console.log(`Hey ${this.name} am your neighborhood spiderman and I belong to ${this.team} with members ${mem1} and ${mem2}`);
 
     }
- }
+}
 
 
 let ironMan = {
