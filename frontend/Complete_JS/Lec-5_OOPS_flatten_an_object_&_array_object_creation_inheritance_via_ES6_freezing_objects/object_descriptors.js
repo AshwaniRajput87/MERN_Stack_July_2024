@@ -8,7 +8,7 @@
     - To allow you to specify the attributes such as whether a property can be written, enumerated or configured.
     - Every object descriptors have 2 things: 
     1. data descriptors:
-       value, writtable, enumerable, configurable 
+       value, writable, enumerable, configurable 
     2. Accessor descriptors:
        get, set, enumerable, configurable
 
