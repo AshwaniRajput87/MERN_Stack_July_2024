@@ -1,0 +1,73 @@
+@media only screen and (max-width: 600px) {
+    .banner-header {
+        left: 20%;
+        font-size: 1.5em;
+    }
+
+    .buttons-container button {
+        padding: 10px 11px;
+        margin: 0 10px;
+        cursor: pointer;
+        font-size: 14px;
+        border-radius: 30px;
+    }
+
+    header ul>li {
+        padding: 20px 10px;
+        font-size: 12px;
+    }
+
+    .content-section {
+        padding: 2em 1em;
+    }
+
+    .content-section>h2 {
+        font-size: 1.5em;
+    }
+
+    .banner-header {
+        font-size: 2em;
+        font-weight: 600;
+        margin-left: 10%;
+    }
+
+    .steps-container li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+    .steps-container li:before {
+        content: counter(step-counter);
+        margin-right: 20px;
+        font-size: 1em;
+        color: #f00;
+        padding: 7px 13px;
+        border-radius: 30px;
+        border: 1px solid #f00;
+    }
+
+    .review,
+    .feature {
+        width: 100%;
+    }
+
+    .footer-links a,
+    .copyrigth {
+        font-size: 16px;
+    }
+
+}
+
+
+
+/* Responsive Styles for tab */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    .banner-header {
+        font-size: 2em;
+        font-weight: 600;
+        margin-left: 20%;
+    }
+}
