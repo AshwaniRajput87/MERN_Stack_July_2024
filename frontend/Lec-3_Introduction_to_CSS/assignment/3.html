@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Please NOTE that the link to assets (like images) need to be set in global context.
+For example:
+To access an image from assets folder correct way to set src attribute is 
+
+src = 'profile.png'
+
+instead of 
+
+src = './assets/profile.png'
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Apply the 'Lato' font family to all text */
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+
+        /* Change the color of Person's name's font to #5DA9E9 */
+        header h1 {
+            color: #5DA9E9;
+        }
+
+        /* Set the width of the image in header section to 400px */
+        header img {
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Week 1 -->
+    <!-- Header section -->
+    <header>
+        <!-- Navigation -->
+        <div>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+            <a href="#">Blog</a>
+        </div>
+        <!-- Necessary Details -->
+        <div>
+            <img src="image1.jpg" alt="Profile1" width="400px">
+            <h1>{PERSON_NAME}</h1>
+            <h2>I'm a Frontend<br> <span>Developer</span></h2>
+            <h3>Description:</h3>
+            <button>DOWNLOAD RESUME</button>
+        </div>
+        html {
+            font: 
+        }
+    </header>
+
+    <hr>
+    <!-- About Me section -->
+    <section class="about">
+        <!-- Profile Image -->
+        <div>
+            <img src="image2.jpg" alt="Profile2">
+        </div>
+        <!-- Intro, Description and Links -->
+        <div>
+            <h1>About Me</h1>
+            <h3>Hello! I'm {PERSON_NAME}</h3>
+            <p>Description Area for About me</p>
+            <!-- Links to social profiles along with logos -->
+            <div>
+                <a href=""><img src="github logo.png" alt="Logo1"></a>
+                <a href=""><img src="leet logo.png" alt="Logo2"></a>
+                <a href=""><img src="linkedIn.png" alt="Logo3"></a>
+                <a href=""><img src="twitter logo.png" alt="Logo4"></a>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    <!-- Projects section -->
+    <section class="projects">
+        <div>
+            <h1 class="projects-head">My Projects</h1>
+            <p>I mostly work with HTML, CSS, JavaScript</p>
+            <div>
+                <div class="card">
+                    <img src="calculator png.png" alt="Project1">
+                    <h2>Project 1</h2>
+                    <p>Project 1 description.</p>
+                </div>
+                <div class="card">
+                    <img src="cart png.png" alt="Project2">
+                    <h2>Project 2</h2>
+                    <p>Project 2 description.</p>
+                </div>
+                <div class="card">
+                    <img src="to do list.png" alt="Project3">
+                    <h2>Project 3</h2>
+                    <p>Project 3 description.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Week 2 -->
+    <!-- Get in Touch form section -->
+    <section class="contact-section">
+        <h1>Get in Touch</h1>
+        <form id="contact">
+            <label>
+                <span>Name</span>
+                <input type="text" name="name" placeholder="Name">
+            </label>
+            <label>
+                <span>Email</span>
+                <input type="email" name="email" placeholder="Email">
+            </label>
+            <label>
+                <span>Message</span>
+                <textarea name="message" placeholder="Message"></textarea>
+            </label>
+            <input id="submit_button" name="submit" type="submit" value="Send" />
+        </form>
+    </section>
+</body>
+
+</html>

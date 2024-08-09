@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<!-- Please NOTE that the link to assets (like images) need to be set in global context.
+For example:
+To access an image from assets folder correct way to set src attribute is 
+
+src = 'profile.png'
+
+instead of 
+
+src = './assets/profile.png'
+-->
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1 {
+            color: blue;
+        }
+        p {
+            background-color: yellow;
+        }
+        .highlight {
+            background-color: yellow;
+            color: #ff0000;
+        }
+        #special {
+            background-color: hsl(120, 100%, 50%);
+        }
+        input[type="text"] {
+            background-color: rgba(255, 0, 0, 0.5);
+        }
+        a:hover{
+            color: hsla(0, 100%, 50%, 0.8);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Heading</h1>
+    <p>Paragraph with yellow background.</p>
+    <p class="highlight">This is a highlighted paragraph.</p>
+    <p id="special">This is a special paragraph.</p>
+    <input type="text" />
+    <a href="#">Link</a>
+</body>
+
+</html>
