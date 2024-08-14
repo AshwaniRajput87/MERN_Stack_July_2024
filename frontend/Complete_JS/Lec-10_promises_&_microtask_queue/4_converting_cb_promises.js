@@ -44,3 +44,8 @@ promise.then((data)=>{
     console.log("Promise either get resolved or rejected")
 })
 
+
+// why promises are better than callbacks?
+
+
+
