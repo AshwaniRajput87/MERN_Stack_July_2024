@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and Events Handling</title>
+</head>
+<body>
+
+   <!--
+       What is an event?
+        - It's just an action takes place.
+
+       What is an event in DOM?
+        - It's just an takes place within the web page.
+        - eg: When a user interacts with website, click on a button, interact with keyboard, or may be with the browser reload/load button
+   
+       How many types of events do we have?
+
+        - Mouse events: Events related to the mouse interaction.
+        - Mouse Events name:
+          1. click
+          2. dbclick
+          3. mouseover
+          4. mouseout
+          5. mouseleave
+          6. mousemove
+          7. mousedown
+          8. mouseup
+
+        - Keyboard Events: Events are associated with keys of the keyboard.
+        - Keyboard Events name:
+          1. keydown
+          2. keyup
+          3. keypress
+
+        - Form Events: events associated with form elements.
+        - Form Event name:
+          1. submit
+          2. reset
+          3. change
+          4. input
+          5. focus
+          6. blur
+
+        - Document events: Events associated with document itself.
+        - Document event name:
+          1. load
+          2. unload
+          3. DOMContentLoaded
+
+        - Window Events: Event associated with browsers.
+          Window Event name:
+        1. resize
+        2. scroll
+
+        How to handle the events?
+
+        there are 2 ways to handle the events:
+
+        1. Inline event handling:
+
+           - you directly use the event via 'on' attibute with the event name inside the HTML elements.
+
+        2. DOM Event Listener methods:
+
+           - a modern and recommeded approach to add an event to the HTML element.
+           - element.addEventListener(eventname, listener(callback), options)
+           - element.removeEventListener(eventname, listener(callback), options)
+
+             
+       
+   -->
+
+   <!-- <button onclick="handleClick()">Click here</button> -->
+   <button id="btn">Click here</button>
+   <script>
+        const userName= 'Ashwani Rajput';
+        const btn = document.getElementById('btn');
+        // btn.addEventListener('click', ()=>{
+        //     handleClick();
+        // }, {once: true})
+        btn.addEventListener('click', ()=>{
+            handleClick();
+        })
+        const handleClick =() =>{
+            //console.log('click happens')
+            const p = document.createElement('p');
+            p.innerText = `Hello, ${userName}`;
+
+            const body = document.querySelector('body');
+            body.appendChild(p);
+
+            btn.removeEventListener('click', handleClick);
+        }
+   </script>
+    
+</body>
+</html>
