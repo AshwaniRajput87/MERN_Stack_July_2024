@@ -1,0 +1,390 @@
+/*--- Base Styles (Mobile First) ---*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  font-size: 37.5%; /* 6px base font size */
+}
+
+p, li, a, label, option {
+  font-size: 1.5rem;
+}
+
+/*--- Features Section ---*/
+.container-parent {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 0 1rem;
+}
+
+.container {
+  box-shadow: 0 1rem 2.2rem 1rem rgba(27, 38, 49, 0.1);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: auto; /* Allow height to be dynamic */
+  width: 100%;
+  max-width: 50rem; /* Set a max-width */
+}
+
+.icon {
+  text-align: center;
+  color: #f63854;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+/*--- Follow Section ---*/
+.follow {
+  background-image: linear-gradient(rgba(27, 38, 49, 0.1), #fff);
+}
+
+.container-parent__follow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem;
+  width: 100%;
+}
+
+.follow-steps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.follow-steps {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.follow-step-count {
+  color: #f63854;
+  font-size: 5rem;
+  border: 2px solid #f63854;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  border-radius: 50%;
+}
+
+.follow-steps-data {
+  font-size: 2rem;
+}
+
+.follow_image_container {
+  width: 100%;
+  max-width: 40%;
+  margin: 0 auto;
+}
+
+.follow_image_container img {
+  width: 100%;
+}
+
+/*--- Reviews Section ---*/
+.section__reviews {
+  width: 100%;
+  background: url("../assets/images/foodiesfeed.com_pizza-ready-for-baking.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.container-parent__reviews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+}
+
+.container-parent__reviews-layer {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+.card__review {
+  width: 100%;
+  max-width: 50rem;
+  padding: 3rem;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__review-img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+
+.card__review-rating i {
+  color: #f63854;
+  font-size: 2rem;
+  padding: 1.5rem;
+}
+
+.card__review-name {
+  color: #000;
+}
+
+/*--- Price Section ---*/
+.card {
+  border-radius: 4%;
+  width: 100%;
+  max-width: 35rem;
+  border: 2px solid lightgray;
+  margin: 3rem 0;
+  padding: 2.5rem 1rem 1.5rem;
+  line-height: 3rem;
+  box-shadow: rgba(27, 38, 49, 0.1) 0px 1rem 2.2rem 1rem;
+  transition: transform 0.2s;
+}
+
+.card-pricing {
+  font-size: 5rem;
+  display: flex;
+  padding: 1rem;
+  line-height: 5rem;
+}
+
+.card-pricing span {
+  font-size: 2rem;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card-list-item i {
+  color: #f63854;
+  padding: 1rem;
+}
+
+.signup-button {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.cards-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+/*--- Contact Section ---*/
+.section__contact {
+  background-color: #212529;
+  min-height: 100vh;
+  padding: 6rem 0;
+}
+
+.form-container-parent {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 2rem;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 50%;
+}
+
+.contact-form label {
+  color: rgb(201, 197, 197);
+}
+
+.contact-video {
+  width: 100%;
+  max-width: 40%;
+}
+
+video {
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+form label {
+  font-size: 2rem;
+}
+
+input,
+select {
+  height: 5rem;
+  border: 2px solid gray;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+input[type="checkbox"] {
+  width: 2rem;
+}
+
+textarea {
+  height: 12rem;
+  border: 2px solid gray;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.contact-form-button {
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+}
+
+.showcase {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-form-condition {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/*--- Footer Section ---*/
+.footer-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  background-color: rgb(58, 56, 56);
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  gap: 2rem;
+}
+
+.footer-text {
+  width: 70%;
+  padding-right: 6%;
+}
+
+.footer-text li a,
+.social-link i {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.footer-copyright h3 {
+  font-size: 2rem;
+  color: #c8c0c0;
+}
+
+/*--- Media Queries ---*/
+
+/* Small Devices (Tablets & Large Phones) */
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  :root {
+    font-size: 47%; /* 7.5px base font size */
+  }
+
+  .container-parent {
+    gap: 3rem;
+    margin: 0 2rem;
+  }
+
+  .container {
+    width: 48%;
+  }
+
+  .cards-container {
+    gap: 2rem;
+  }
+
+  .form-container-parent {
+    gap: 3rem;
+    margin: 0 5rem;
+  }
+
+  .contact-form,
+  .contact-video {
+    width: 45%;
+  }
+
+  .follow-step-count {
+    font-size: 3.5rem;
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+  }
+}
+
+/* Medium Devices (Small Laptops) */
+@media screen and (min-width: 900px) {
+  :root {
+    font-size: 62.5%; /* 10px base font size */
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .cards-container {
+    gap: 4rem;
+  }
+
+  .form-container-parent {
+    gap: 5rem;
+    margin: 0 10rem;
+  }
+
+  .contact-form {
+    width: 50%;
+  }
+
+  .contact-video {
+    width: 40%;
+  }
+
+  .footer-text {
+    padding-right: 10%;
+  }
+
+  .follow-step-count {
+    font-size: 4.5rem;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+  }
+}
