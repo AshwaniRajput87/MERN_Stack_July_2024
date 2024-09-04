@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <form id="userForm">
+            <input type="text" name="firstName" placeholder="First Name" />
+            <input type="text" name="lastName" placeholder="Last Name" />
+            <input type="email" name="email" placeholder="Email" />
+            <input type="password" name="password" placeholder="Password" />
+        </form>
+
+    <script>
+        document.getElementById('userForm').addEventListener('input', function(event) {
+            const target = event.target;
+
+            if (target.name === 'firstName') {
+                console.log('First Name changed to:', target.value);
+            } else if (target.name === 'lastName') {
+                console.log('Last Name changed to:', target.value);
+            } else if (target.type === 'email') {
+                console.log('Email entered:', target.value);
+            } else if (target.type === 'password') {
+                console.log('Password entered.');
+            }
+        });
+    </script>
+</body>
+</html>

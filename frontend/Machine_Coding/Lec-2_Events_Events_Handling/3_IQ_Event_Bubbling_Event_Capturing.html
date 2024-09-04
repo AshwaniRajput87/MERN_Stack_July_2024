@@ -1,0 +1,66 @@
+<!--
+
+  Event Bubbling: (bottom to top)
+
+    - Event triggered on a specific, then it propagate from bottom to top till its parent element.
+    - default behavior of any event occurs in the web page.
+
+
+
+  Event Capturing: (top to bottom)
+   - Event triggered on a specific, then it propagate from top to bottom till its parent element.
+   - Have to explicitly.
+
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ </head>
+ <body>
+     click the body element
+
+    <div id="outer" style="color: green;">
+      click the outer
+      <div id="inner" style="color: red;">Click the inner</div>
+      <div id="inner-1" style="color: red;">Click the inner 1</div>
+    </div>
+
+    <button>click here</button>
+    <script>
+
+      /*Event Bubbling(default behavior)*/
+      
+      const innerEl = document.getElementById('inner');
+      const outerEl = document.getElementById('outer');
+      const bodyEl = document.querySelector('body');
+      innerEl.addEventListener('click', (e)=>{
+        console.log('inner element clicked');
+        e.stopPropagation();
+      }, true)
+
+      outerEl.addEventListener('click', (e)=>{
+        console.log('outer element clicked');
+        e.stopPropagation();
+      }, true)
+
+      bodyEl.addEventListener('click', (e)=>{
+        console.log('body element clicked');
+        e.stopPropagation();
+      }, true)
+
+      /***
+          Thumb rule:
+          1. Use the event bubbling, because it gives you the sense of triggereing the event on the current elements.
+          2. try to avoid to use event capturing because it may lead to a confusion.
+      */    
+    </script>
+  
+ </body>
+ </html>
+
+ 

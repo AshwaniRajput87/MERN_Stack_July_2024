@@ -1,0 +1,42 @@
+@import url("./helpers/core.css");
+
+.display-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  column-gap: 0.5rem;
+}
+
+.display-wrapper.progress input {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.controls-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+input {
+  width: 3rem;
+  margin: 0;
+  font-size: 4rem;
+  border-color: 1px solid grey;
+}
+
+button {
+  padding: 0.5rem 0.8rem;
+  border: 1px solid grey;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Without and with Fragments</title>
+</head>
+<body>
+
+    <ul id="list-items"></ul>
+
+    <!--
+       What is fragments in JS?
+
+          - A lightweight container that can hold the multiple DOM nodes.
+          - It's not the part of real DOM/ main document tree, that improves the web performance by manipulating or creating the elements outside the real DOM.
+          - How can you create the fragments in JS?
+
+             - document.createDocumentFragment() 
+    
+    
+    -->
+
+    <script>
+        const ul = document.getElementById('list-items');
+        // const arrData = [];
+        const fragment = document.createDocumentFragment();
+
+        for(let i=1; i<=100; i++){
+            const li = document.createElement('li');
+            li.textContent = `Item-${i}`;
+            // ul.appendChild(li);
+            fragment.appendChild(li);
+        }
+
+        console.log(fragment);
+        console.log(ul);
+
+       ul.appendChild(fragment);
+    </script>
+    
+</body>
+</html>

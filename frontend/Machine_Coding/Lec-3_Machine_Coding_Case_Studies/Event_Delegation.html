@@ -1,0 +1,37 @@
+<!--
+
+   What is event delegation?
+
+      - A technique in JS to handle the events for multiple child elements using a single a listener on a parent element.
+      - Instead of adding event listeners to each child element, leverage the event bubbling to catch events.
+    
+    Benefits:
+    - This approach reduces the number of event listerners and helps to avoid the performance issues.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegation</title>
+</head>
+<body>
+    <ul id="listItems">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+    <script>
+        const list = document.getElementById('listItems');
+        list.addEventListener('click', (event)=>{
+            console.log(event.target.tagName);
+            if(event.target.tagName === 'LI') {
+                console.log(`Clciked on: ${event.target.textContent}`)
+            }
+        });
+    
+    </script>
+</body>
+</html>
