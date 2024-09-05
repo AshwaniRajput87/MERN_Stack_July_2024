@@ -48,7 +48,7 @@
 
 # how to improve web perfomance?
 
-  - CSS optimisation:
+  - CSS optimisation Techniques:
 
     1. Remove the unused CSS:
 
@@ -64,7 +64,7 @@
 
    5. CSS class name shorter. 
 
-  - Image Optimisation:
+  - Image Optimisation Techniques:
 
      - you ask from the design team, please the smaller siz of the images either in PNG or WebP
 
@@ -75,11 +75,52 @@
      - srcset -> it's attribute of image tag which is for responsive images
         - srcset is going to use in img tag only -> for rendering the images based on device resolutions.
     
-   
 
-
-  - JS optimisation:
+  - JS optimisation Techniques:
 
     - Assignment - Read about IntersectionObserver
+    - split JS - larger JS - into different JS files and making sure inculde  those code which is specific to particular web page.
+    - how can you use defer and async attributes in script tag?
+
+
+    Memory leak problems:
+    --------------------
+
+    1. Global variables: 
+        - it may pollute the variables globally(modified via function)
+        - try to avoid using global variables.
+           create a functions  and in those you can decalare your variables
+
+    2. closure and scope:
+
+        - Processing a large amount of data via closure, so handle it carefully.
+        - Eg: data = null;
+
+    3. Handling the events
+       - Attaching the events via addEventListener('DOMContentLoaded', ()=>{
+
+       })
+       addEventListener('click', ()=>{
+
+       })
+       - How to handle it?
+          - Deattach the events via removeEventListener('click', functionName)
+
+    4. setInterval() -> returns a timerID
+
+       how can you handle it or avoid it?
+
+          - can clearInterval()
+          - timerId = null
+
+    5. promises
+
+        - once you create a promise (resolve, and reject)-> there is might a possibility of not consuming the promise then will create memory leak problem.
+        - How to avoid it?
+
+           - you have to consume the promises.
+             - then, catch and finally
+             - async, await
+
 
 
