@@ -1,0 +1,553 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F4F4F4;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+body>header{
+    height: 640px;
+    width: 100%;
+    position: relative;
+    background-image: url("../assets/images/foodiesfeed.com_pizza-ready-for-baking.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+.banner-header {
+    font-size: 3em;
+    position: relative;
+    left: 300px;
+    top: 180px;
+    font-weight: 600;
+    width: 500px;
+}
+.banner-header span {
+    color: #F63854;
+}
+header nav{
+    position: relative;
+}
+.shadow-effect{
+    width: 100%;
+    height: 100%;
+    background-color: #000000bd;
+    position: absolute;
+}
+header ul {
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+    position: absolute;
+    right: 5px; 
+}
+
+header ul>li {
+    color: #fff;
+    padding: 10px 10px;
+    text-transform: uppercase; 
+    font-size: 1.5em;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+.buttons-container button {
+    border: none;
+    padding: 15px 25px;
+    margin: 0 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 30px;
+}
+
+button.primary {
+    background-color: #F63854;
+    color: #fff;
+    border: none;
+}
+
+button.secondary {
+    background-color: #ccc0;
+    color: #F63854;
+    border: 2px solid #F63854;
+}
+
+
+.header-content h1 {
+    font-size: 3em;
+}
+
+.header-content h1 span {
+    color: #f94e4e;
+}
+
+.header-content .btn {
+    display: inline-block;
+    margin: 1em;
+    padding: 1em 2em;
+    background: #f94e4e;
+    color: #fff;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.header-content .btn:hover {
+    background: #d93e3e;
+}
+
+
+.content-section{
+    color:#808080;
+    padding: 4em 2em;
+    text-align: center;
+    position: relative !important;
+}
+
+.content-section >h2{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0.5em !important;
+}
+
+/* Features */
+.features{
+    background-color: #ffffff;
+}
+.divider{
+    border:1.5px solid #f00;
+    width: 100px;
+    margin: auto;
+    margin-bottom: 1em !important;
+}
+.feature{
+    background: #ffffff;
+}
+.feature>.icon {
+    font-size: 3em;
+    color:red;
+}
+
+.features h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    color: #808080
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    width: 25%;
+    margin: 1em 0;
+    padding: 2em;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature img {
+    width: 50px;
+    height: 50px;
+}
+
+.feature h3 {
+    margin: 1em 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.feature p {
+    color: #666;
+}
+
+/* Steps */
+.steps {
+    background: #f1f1f1;
+}
+
+.steps h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.steps-container img {
+    max-width: 200px;
+}
+
+.steps-container ol {
+    list-style: decimal;
+    padding-left: 20px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.steps-container li {
+    font-size: 1.2em;
+    margin: 1em 0;
+    color: #333;
+    counter-increment: step-counter;
+}
+
+.steps-container li:before{
+    content: counter(step-counter);
+    margin-right: 20px;
+    font-size: 2em;
+    background-color: rgb(255 255 255);
+    color: #f00;
+    padding: 3px 14px;
+    border-radius: 30px;
+    border: 1px solid #f00;
+}
+
+/* Reviews */
+.reviews {
+    text-align: center;
+    background-image: url("../assets/images/foodiesfeed.com_pizza-ready-for-baking.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    position: relative;
+}
+
+.reviews h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.review {
+    width: 25%;
+    margin: 1em 0;
+    padding: 2em;
+    background: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.review p {
+    margin: 1em 0;
+    color: #333;
+}
+
+.review .stars {
+    color: #f94e4e;
+}
+.review .stars span {
+    padding: 5px;
+    font-size: 25px
+}
+
+/* Pricing */
+.pricing-container {
+    text-align: center;
+    height: auto;   
+    margin-bottom: 40px;
+}
+
+.pricing-container h1 {
+    font-size: 2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 75px;
+}
+
+.pricing-card {
+    background-color: #F4F4F4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 40px;
+    width: 200px;
+    text-align: left;
+    border: 2px solid #D7DADE;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #9CA3B2;
+
+}
+
+.pricing-card > h2{
+    color:#0e0b0b;
+    text-align: center;
+}
+
+.seperator{
+    border: 1px solid #9CA3B2;
+    width: 100%;
+    margin: auto;
+}
+
+.pricing-card.focus {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-card h2 {
+    font-size: 1.5em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 2.5em;
+    color: #e74c3c;
+    margin: 10px 0;
+}
+
+.price span {
+    font-size: 0.5em;
+    color: #aaa;
+}
+
+.meal-cost {
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.pricing-card > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.pricing-card > ul li {
+    color: #555;
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.pricing-card > ul > li > i {
+    color: #e74c3c;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+    position: relative;
+    bottom: -40px;
+}
+
+.button-container button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+.plan {
+    width: 25%;
+    margin: 1em 0;
+    padding: 2em;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.plan h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.plan p {
+    margin: 1em 0;
+    color: #666;
+}
+
+.plan ul {
+    margin: 1em 0;
+}
+
+.plan li {
+    margin: 0.5em 0;
+    color: #333;
+}
+
+.plan .btn {
+    display: inline-block;
+    padding: 1em 2em;
+    background: #f94e4e;
+    color: #fff;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.plan .btn:hover {
+    background: #d93e3e;
+}
+
+/* Contact */
+.contact {
+    padding: 4em 2em;
+    text-align: center;
+    background: #000;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.contact-form {
+    width: 50%;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin: 1em 0 0.5em;
+    color: #808080;
+    text-align: left;
+}
+
+.contact-form input, .contact-form select, .contact-form textarea {
+    padding: 10px;
+    border:1px solid #808080;
+    margin-bottom: 1em;
+    border-radius: 0px;
+    font-family: sans-serif;
+}
+
+.contact-form button:hover {
+    background: #d93e3e;
+}
+
+.contact-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-btn {
+    margin: auto;
+}
+
+/* Footer */
+footer {
+    padding: 2em;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+.footer-links a {
+    margin: 0 1em;
+    color: #fff;
+    font-size: 24px;
+}
+
+.app-links{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.social-icons {
+    flex:1;
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+.social-icons a {
+    margin: 0 0.5em;
+    padding:10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.copyrigth {
+    margin-top: 1em;
+    color: #808080;
+    font-size: 22px;
+}
