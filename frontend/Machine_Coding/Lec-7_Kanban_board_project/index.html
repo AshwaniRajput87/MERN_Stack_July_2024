@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+</head>
+<body>
+
+    <section class="toolbox-cont">
+        <div class="toolbox-priority-cont">
+            <div class="color red"></div>
+            <div class="color blue "></div>
+            <div class="color green"></div>
+            <div class="color black"></div>
+        </div>
+
+        <div class="actions-btn-cont">
+            <div class="add-btn">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="remove-btn">
+                <i class="fa-solid fa-trash"></i>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-cont">
+        <!-- <div class="ticket-cont">
+            <div class="ticket-color "></div>
+            <div class="ticket-id">#1234</div>
+            <div class="ticket-task">Learn HTML</div>
+            <div class="lock-unlock">
+               <i class="fa-solid fa-lock"></i>
+            </div>
+        </div> -->
+        <!-- <div class="ticket-wrapper">
+            <span>To Do</span>
+            <div class="ticket-container" id="todo"> -->
+               <!-- Tickets has to be created under todo section -->
+            <!-- </div>
+        </div> -->
+
+        <!-- <div class="ticket-wrapper">
+            <span>In Progress</span>
+            <div class="ticket-container" id="inprogress"> -->
+               <!-- Tickets has to be created under todo section -->
+            <!-- </div>
+        </div> -->
+
+        <!-- <div class="ticket-wrapper">
+            <span>Completed</span>
+            <div class="ticket-container" id="completed"> -->
+               <!-- Tickets has to be created under todo section -->
+            <!-- </div>
+        </div> -->
+    </section>
+
+    <div class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="modal-close-btn">
+                    <i class="fa-solid fa-times-circle"></i>
+                </button>
+            </div>
+            <textarea class="modal-textarea" placeholder="Enter your task"></textarea>
+            <div class="priority-color-cont">
+                <button class="add-card">Add Button</button>
+                <div class="priority-color red active"></div>
+                <div class="priority-color blue"></div>
+                <div class="priority-color green"></div>
+                <div class="priority-color black"></div>
+            </div>
+        </div>
+    </div>
+
+    <script defer src="./js/script.js"></script>
+</body>
+</html>

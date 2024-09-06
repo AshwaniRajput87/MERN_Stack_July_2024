@@ -1,0 +1,232 @@
+:root {
+    --red: #FF0028;
+    --blue: #2525cb;
+    --green: #2AAA8A;
+    --black: #000000;
+    --grey: #eeeeee ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+/**  Toolbox styles  ***/
+/*   1rem = 16px by default **/
+
+/**   font-size: 10px, now 1rem = 10px**/
+
+.toolbox-cont {
+    height: 10rem;
+    background-color: var(--black);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.toolbox-priority-cont {
+    height: 6rem;
+    background-color: aliceblue;
+    width: 320px;
+    margin-left: 10rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.color {
+    width: 5rem;
+    height: 3rem;
+}
+
+.red {
+    background-color: var(--red);
+}
+.blue {
+    background-color: var(--blue);
+}
+
+.green {
+    background-color: var(--green);
+}
+
+.black {
+    background-color: var(--black);
+}
+
+.actions-btn-cont {
+    height: 6rem;
+    background-color: aliceblue;
+    margin: 5rem;
+    padding: 1rem;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-btn, .remove-btn {
+    font-size: 2.75rem;
+    cursor: pointer;
+}  
+
+.fa-plus,
+.fa-trash {
+    font-size: 3rem;
+}
+
+.main-cont {
+    padding:  2rem;
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap;
+    gap: 2rem; */
+}
+
+.ticket-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.ticket-wrapper span {
+    min-width: 270px;
+    padding: 2rem;
+    margin:  1rem 0;
+    font-size: 1.75rem;
+    background-color: #7c7c7c;
+    text-align: center;
+}
+
+.ticket-container {
+    flex: 1;
+    padding: 1rem;
+    min-width: 270px;
+    background-color: #7c7c7c;
+    min-height: 200px;;
+}
+
+.ticket-cont {
+    height: 20rem;
+    width: 25rem;
+    background-color: aliceblue;
+    position: relative;
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.dragging {
+    opacity: 0.5;
+}
+
+.ticket-color {
+    height: 1.5rem;
+}
+
+.ticket-id {
+    font-weight: 600;
+    font-size: 1.75rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.ticket-task {
+    height: 7.5rem;
+    padding-left: 1rem;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.lock-unlock {
+    position: absolute;
+    bottom: 1rem;
+    right: 2rem;
+    cursor: pointer;
+}
+
+.fa-lock,
+.fa-unlock,
+.fa-times-circle {
+    font-size: 2rem;
+}
+
+.active {
+    border: 2px solid yellow;
+}
+
+.modal-overlay {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1;
+}
+
+.modal-close-btn {
+    border: 0;
+    background-color: transparent;
+    right: -15px;
+    top: -15px;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.modal-content {
+  height: 50vh;
+  width: 50vw;
+  display: flex;
+  border: 2px solid grey;
+  position: fixed;
+  left: 25vw;
+  top: 25vh;
+}
+
+.modal-textarea {
+    height: 100%;
+    width: 75%;
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    padding: 2rem;
+    resize: none;
+}
+
+.priority-color-cont {
+    background-color: aliceblue;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-left: 2px solid grey;
+}
+
+.add-card {
+    background-color: #7c7c7c;
+    padding: 1rem;
+    border-radius: 4px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+  
+.priority-color {
+    height: 3rem;
+    width: 5rem;
+}
+
+
