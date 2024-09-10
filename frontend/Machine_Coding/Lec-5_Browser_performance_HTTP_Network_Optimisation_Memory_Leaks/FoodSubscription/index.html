@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <meta
       name="description"
       content="Author:Ashwani Rajput,
@@ -202,7 +203,7 @@
       }
       /* END : Page header*/
     </style>
-    
+    <!-- <script async src="third-party.js"></script> -->
   </head>
   <body>
     <!-- Page Header-->
@@ -312,7 +313,23 @@
         <h2 class="section-header">steps to follow</h2>
         <div class="container-parent__follow">
           <div class="follow_image_container">
-            <img loading="lazy" src="./assets/images/capture.png" alt="" />
+          <img 
+              loading="lazy" 
+              src="./assets/images/capture.png" 
+              alt="Capture Image" />
+            <!-- <img 
+              loading="lazy" 
+              src="./assets/images/capture.png" 
+              srcset="
+                ./assets/images/capture.png 320w,
+                ./assets/images/customer.jpg 481w,
+                ./assets/images/example.png 1200w"
+              sizes="
+                (max-width: 480px) 320px,
+                (max-width: 1024px) 481px,
+                (min-width: 1025px) 1200px
+              "
+              alt="Capture Image" /> -->
            
           <div class="follow-steps-container">
             <div class="follow-steps">
@@ -635,7 +652,7 @@
       </div>
     </footer>
     <!--Non Critical CSS-->
-    <link rel="stylesheet" href="./css/fs-styles-min.css" />
+    <!-- <link rel="stylesheet" href="./css/fs-styles-min.css" /> -->
     <!-- <script>
         // window.onload = function(){
         //   let link = document.createElement('link');
@@ -645,15 +662,9 @@
         //   document.head.appendChild(link);
         // }
 
-        document.addEventListener('DOMContentLoaded', ()=>{
-          let link = document.createElement('link');
-          link.rel = "stylesheet"
-          link.href = "./css/fs-styles-min.css"
-
-          document.head.appendChild(link);
-        })
+        
     
-    </script> -->
-    
+    </scrip> -->    
   </body>
+  <script defer src="./script/script-min.js"></script>
 </html>
