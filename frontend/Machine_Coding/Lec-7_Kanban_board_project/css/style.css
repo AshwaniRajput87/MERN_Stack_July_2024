@@ -76,6 +76,8 @@
 .fa-plus,
 .fa-trash {
     font-size: 3rem;
+    border: none;
+    background-color: transparent;
 }
 
 .main-cont {
@@ -228,5 +230,7 @@
     height: 3rem;
     width: 5rem;
 }
+
+
 
 
