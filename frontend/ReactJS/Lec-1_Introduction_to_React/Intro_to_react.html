@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Hello World App</title>
+     <!-- React is a ui manipulation(logic)library -->
+    <script src="https://unpkg.com/react@18.3.1/umd/react.development.js"></script>
+
+    <!-- react dom -> To get the actual changes in the DOM with the help of react DOM library  -->
+    <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"></script>
+
+    <!-- to convert jsx to js  -->
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+</head>
+<body>
+
+  <div id="root"></div>
+
+  <script type="text/babel">
+  
+    // Need to write component
+    const Hello = () => {
+        return <h1>Hello friends, Welcome in React World!!!</h1>
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+
+    root.render(<Hello />);
+  
+  </script>  
+</body>
+</html>
