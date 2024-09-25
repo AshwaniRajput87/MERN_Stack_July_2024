@@ -21,7 +21,7 @@ const UserList = () => {
               className="list-item"
               style={{ color: "red", fontSize: "50px" }}
             >
-              Welcome, {item.name} and your name is {item.age}
+              Welcome, {item.name} and your age is {item.age}
             </li>
           );
         })}
