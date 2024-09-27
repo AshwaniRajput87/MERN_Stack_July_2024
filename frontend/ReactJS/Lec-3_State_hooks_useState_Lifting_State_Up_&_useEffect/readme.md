@@ -57,3 +57,11 @@ onChange
 
   - controlled comp: when form data is managed by react state.
   - uncontrolled comp: When form data is managed by the DOM itself.
+
+# Why do we need to use prevState?
+
+prevState in setState() or useState() ensures that state updates are based on the most recent state. It avoids problems with inconsistent data from asynchronous state updates.
+
+# What is Asynchronous state updates in React?
+
+Asynchronous state updates mean state changes are scheduled and processed later, not immediately, which can lead to multiple updates being batched together.
