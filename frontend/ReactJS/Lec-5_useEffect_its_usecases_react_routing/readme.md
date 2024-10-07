@@ -96,3 +96,6 @@
     <Navigate> - This is also a component to navigate on the path that yopu define.
 
     Dynamic routing: you provide the vralbles i the url :classId and ablue use to read these dynamic urls values using useParams() - hook.
+
+  - nested routes - post read
+    - https://reactrouter.com/en/main/hooks/use-params
