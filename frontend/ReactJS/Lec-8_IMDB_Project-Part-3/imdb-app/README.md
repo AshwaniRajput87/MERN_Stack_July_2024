@@ -30,3 +30,34 @@
   2.  API key and Auth token - it will allow you to acees the movies
 
   3.  All the end points here - https://developer.themoviedb.org/reference/intro/getting-started
+
+# context API
+
+- Why should you use context API?
+
+  - because prop drilling problem in React
+
+- what is prop drilling?
+
+  - a situation occurs when you are passed down the props through multiple levels of nested components to reach on a particular component where the data is required.
+
+- What are the challenges there?
+
+  - Components are getting re-rendered whenever the props are getting updating via state varibales.
+
+  - Maintenance cost and dev efforts and testing efforts will be increased. Over scope of work for delivering a particular will be increased.
+
+- How to fix above problem?
+
+  - context api
+
+    Context API is provided by React which is a way to share you data among components without need to pass props manually theorug each level of the component tree.
+
+    - usecase of context API : counter
+
+    - How to implememt te context API?
+
+      1.  create context
+      2.  Provide the values via Context Provider to the repective nested level components
+
+    - Implement the context API for counting the number of movies added in favList navbar link. (Assignment)
