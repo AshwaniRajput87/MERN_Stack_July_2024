@@ -1,0 +1,39 @@
+header {
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  color: rgb(30, 229, 229);
+}
+
+ul {
+  margin: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+li {
+  padding: 0 20px;
+}
+
+.active {
+  text-decoration: none;
+}
+
+.active:hover {
+  text-decoration: underline;
+  color: rgb(30, 229, 229);
+}
+
+.text-sky {
+  color: rgb(30, 229, 229);
+  text-decoration: underline;
+}
+
+.text {
+  color: black;
+  text-decoration: none;
+}
