@@ -9,7 +9,7 @@ export const fetchMiddleware = () => {
     try {
       dispatch(actions.isUserLoading(true));
 
-      const resp = await fetch("https://jsonplaceholder.typicode.com/users/1");
+      const resp = await fetch("https://jsonplaceholder.typicode.com/users/3");
 
       const res = await resp.json();
 

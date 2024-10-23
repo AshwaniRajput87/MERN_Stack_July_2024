@@ -1,0 +1,11 @@
+.counter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  width: 100px;
+  margin: 0 20px;
+  text-align: center;
+}
