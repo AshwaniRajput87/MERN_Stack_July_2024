@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h2>Survey Form</h2>
+    <form action="">
+        <!-- Name field -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br>
+
+        <!-- Age field -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age">
+        <br>
+
+        <!-- Gender field -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br>
+
+        <!-- Favorite Food dropdown -->
+        <label for="food">Favorite Food:</label>
+        <select id="food" name="food">
+            <option value="pizza">Pizza</option>
+            <option value="chinese">Chinese food</option>
+            <option value="indian">Indian food</option>
+            <option value="mexican">Mexican food</option>
+            <option value="italian">Italian food</option>
+        </select>
+        <br>
+
+        <!-- Do you like to cook? checkbox -->
+        <label for="cook">Do you like to cook?</label>
+        <input type="checkbox" id="cook" name="cook" value="yes"> Yes
+        <input type="checkbox" id="nocook" name="cook" value="no"> No
+        <br>
+
+        <!-- Additional comments -->
+        <label for="comments">Additional comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        <br>
+
+        <!-- Submit button -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
